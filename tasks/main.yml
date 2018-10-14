@@ -1,0 +1,8 @@
+---
+- name: Add third-party Ansible repo
+  apt_repository:
+    repo: ppa:{{ ansible_ppa }}
+
+- name: Install Ansible package
+  apt:
+    name: ansible
